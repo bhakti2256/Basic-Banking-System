@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+html::before{
+    content: "";
+    background: url(../images/cool-background.png) no-repeat center /cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.mainSection{
+    margin: 30px auto;
+    width: 55%;
+    border: 1px solid;
+    background-color: #c2f4f5;
+    border-radius: 18px;
+}
+
+@media only screen and (max-width: 768px){
+    .mainSection{
+        width: 91%;
+    }
+}
+
+.mainSection h2{
+    text-align: center;
+    margin: 15px auto;
+}
+
+form{
+    width: 80%;
+    padding: 20px;
+    margin: 30px auto;
+    border: 1px dashed gray;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+/* .form-field{
+    margin: 15px;
+    padding: 10px;
+} */
+
+.table{
+    margin: auto;
+}
+
+.table tbody{
+    display: inline-table;
+    background-color: whitesmoke;
+}
+
+.table tbody td{
+    margin: 15px;
+    padding: 10px;
+}
+
+.input{
+    padding: 5px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #378f92;
+    color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #63c7ca;
+    color: black;
+    transform: scale(0.25rem);
+    transition: 0.5s;
+}
+
+/* 
+Media Queries
+.mainSection{
+    width: 90%;
+}
+form - width 85%
+*/

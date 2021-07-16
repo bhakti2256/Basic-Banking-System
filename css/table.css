@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c9f1f3;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
+    height: 47px;
+    background-color: #378f92;
+}
+
+.logo{
+    font-family: 'Staatliches', cursive;
+    margin: 3px 18px;
+    padding: 6px 12px;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.noselect {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;
+    cursor: default;           
+}
+
+.item{
+    display: flex;
+}
+
+.item li{
+    /* justify-content: center; */
+    list-style: none;
+}
+
+.item li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    margin: 7px;
+}
+
+.item li a:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+}
+
+h1{
+    margin: 15px auto;
+    text-align: center;
+}
+
+.main-table{
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 75%;
+    font-size: 1rem;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.main-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.main-table th,
+.main-table td {
+    padding: 12px 15px;
+}
+
+.main-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: white;
+}
+
+.main-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.main-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.main-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
