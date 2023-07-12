@@ -37,21 +37,7 @@
             </thead>
             <tbody>
             <?php
-                $server = "sql206.epizy.com";
-                $username = "epiz_29156711";
-                $password = "yPj2MNUsAGr";
-                $db = "epiz_29156711_tsfbanksystem";
-
-                //to establish connection
-                $con = mysqli_connect($server, $username, $password,$db);
-
-                //to check
-                if(!$con){
-                    die("Connection to this database failed due to " . mysqli_connect_error());
-                }
-                // else{
-                //     echo "Coonnection successful";
-                // }
+                include 'connection.php';
 
                 $selectquery = "select * from transaction";
                 $query = mysqli_query($con, $selectquery);
